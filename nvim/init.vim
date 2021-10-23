@@ -1,6 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'rakr/vim-one'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -9,7 +11,10 @@ Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
-colorscheme gruvbox
+set background=dark
+" colorscheme gruvbox
+" colorscheme palenight
+colorscheme one
 
 set noswapfile
 set smartindent
