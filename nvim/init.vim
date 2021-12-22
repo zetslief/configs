@@ -13,8 +13,8 @@ call plug#end()
 
 set background=dark
 " colorscheme gruvbox
-colorscheme palenight
 " colorscheme one
+colorscheme palenight
 
 set noswapfile
 set smartindent
