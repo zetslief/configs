@@ -18,7 +18,6 @@ require "paq" {
 
 	"nvim-treesitter/nvim-treesitter";
 
-    "nvim-tree/nvim-web-devicons";
     "nvim-tree/nvim-tree.lua";
 }
 
@@ -169,3 +168,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+vim.keymap.set('n', '<Space>fe', ':NvimTreeToggle<CR>', opts)
+vim.keymap.set('n', '<Space>ff', ':NvimTreeFindFileToggle<CR>', opts)
+vim.keymap.set('n', '<Space>fc', ':NvimTreeCollapse<CR>', opts)
