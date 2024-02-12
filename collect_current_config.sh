@@ -1,7 +1,13 @@
 #!/bin/bash
 
-cp $HOME/.config/nvim/init.lua nvim/init.lua
-cp $HOME/.config/xmobar/xmobar.config xmobar/xmobar.config
-cp $HOME/.xmonad/*.hs .xmonad/
-cp $HOME/.xmonad/xmonad-session-rc .xmonad/
-cp $HOME/.xmonad/*.sh .xmonad/
+mkdir -p ./nvim
+mkdir -p ./fish
+mkdir -p ./awesome
+
+cp -r $HOME/.config/nvim/* ./nvim
+cp -r $HOME/.config/fish/* ./fish
+cp -r $HOME/.config/awesome/* ./awesome
+
+rm -r ./nvim/spell
+rm ./fish/fish_variables
+rm -r ./fish/functions
